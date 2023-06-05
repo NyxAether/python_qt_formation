@@ -7,8 +7,15 @@ readme = "README.md"
 packages = [{include = "python_qt_formation"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.10,<3.12"
+pyside6 = "^6.5.1"
+pandas = "^2.0.2"
+mypy = "^1.3.0"
+pandas-stubs = "^2.0.2.230605"
 
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.17.4"
 
 [build-system]
 requires = ["poetry-core"]
